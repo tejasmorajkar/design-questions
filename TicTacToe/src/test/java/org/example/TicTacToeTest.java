@@ -44,8 +44,8 @@ public class TicTacToeTest {
     @Test
     public void testDimensions() {
         List<List<BoardCell>> cells = game.getBoard().getCells();
-        assertEquals("should have 3 rows", 3, cells.size());
+        assertEquals("should create a board with 3 rows", 3, cells.size());
         List<BoardCell> firstRow = cells.get(0);
-        assertEquals("should have 3 cols", 3, firstRow.size());
+        assertEquals("should create a board with 3 columns", 3, firstRow.size());
     }
 }
